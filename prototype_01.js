@@ -2,7 +2,7 @@ function checkProto(propName, obj) {
     var objProto = obj.__proto__;
 
     for(var prop in obj){
-        if (obj.hasOwnProperty(prop) && prop === propName) return false;
+        if (obj.hasOwnProperty(propName)) return false;
     }
 
     for (var key in objProto){
@@ -23,6 +23,7 @@ var obj = {
 };
 var newObj = Object.create(obj);
 newObj.c = 3;
+newObj.z = 'zzz';
 
 // console.log(newObj.__proto__);
 
@@ -30,3 +31,5 @@ newObj.c = 3;
 
 console.log(checkProto('d', newObj));
 console.log(checkProto('c', newObj));
+console.log(checkProto('a', newObj));
+console.log(checkProto('z', newObj));
