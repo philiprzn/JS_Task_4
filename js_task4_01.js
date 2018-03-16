@@ -5,4 +5,4 @@ function trimSpasces(string) {
     return string.trim();
 }
 
-console.log(trimSpasces('  Метод trim() возвращает строку с вырезанными пробельными символами с её концов.   '));
+console.log(trimSpasces('     Метод trim() возвращает строку с вырезанными пробельными символами с её концов.   '));
