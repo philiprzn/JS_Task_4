@@ -18,3 +18,16 @@ function uppFL(str) {
 
 
 console.log(uppFL('i am cool'));
+
+
+//////////////////////////////////////////var 2
+
+function appFL2(str) {
+    for (var a = str, b = "", i = 0; i < a.length; i++) {
+        b += " " != a[i] ? i && " " != a[i - 1] ? a[i] : a[i].toUpperCase() : " ";
+    }
+    return b
+}
+
+
+console.log(appFL2("JavaScript is a good language"));
