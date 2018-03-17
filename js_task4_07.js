@@ -1,13 +1,13 @@
 function insertStr(str, insStr,  position) {
-
   var arr = str.split(' ');
-  // var insArr = insStr.split(' ');
+
   arr.splice(position, 0, insStr);
 
   var newStr = arr.join(' ');
 
-
   return newStr;
+
+  // return str.split(' ').splice(position, 0 ,insStr).join(' ');
 
 }
 
